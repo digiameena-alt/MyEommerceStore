@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 100px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: white;
+      border: none;
+      border-radius: 5px;
+      color: #0072ff;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Thank You!</h1>
+  <p>Your order has been placed successfully.</p>
+  <button onclick="goHome()">Go Back to Home</button>
+
+  <script>
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

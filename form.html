@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart / Form Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f9;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+      color: #2575fc;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input, select, button {
+      display: block;
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #2575fc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1b5ed6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fill Your Details</h1>
+  <form onsubmit="event.preventDefault(); goToPayment();">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Shipping Address" required>
+    <select required>
+      <option value="">Select Product</option>
+      <option>Product A</option>
+      <option>Product B</option>
+      <option>Product C</option>
+    </select>
+    <button type="submit">Proceed to Payment</button>
+  </form>
+
+  <script>
+    function goToPayment() {
+      window.location.href = "payment.html";
+    }
+  </script>
+</body>
+</html>
